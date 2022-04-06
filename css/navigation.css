@@ -1,7 +1,11 @@
+:root {
+  --main-color: #273c75;
+}
+
 /* mobile navbar */
 .bg-dark {
   display: none;
-  background-color: #1f3b5d !important;
+  background-color: var(--main-color) !important;
 }
 
 .sidenav {
@@ -12,7 +16,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #1f3b5d;
+  background-color: var(--main-color);
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -47,7 +51,6 @@
 }
 
 .sidenav #sidebar-subtitle {
-  font-style: italic;
   color: #fff;
   text-align: center;
 }

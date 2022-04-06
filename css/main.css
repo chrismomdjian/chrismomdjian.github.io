@@ -1,18 +1,30 @@
+:root {
+  --main-font: 'Montserrat', 'Helvetica', sans-serif;
+}
+
 /* GENERAL */
 body, h1, h2, h3, h4, h5, p {
-  font-family: 'Noto Sans', sans-serif;
-  -webkit-font-family: 'Noto Sans', sans-serif;
-  -moz-font-family: 'Noto Sans', sans-serif;
+  font-family: var(--main-font);
+  -webkit-font-family: var(--main-font);
+  -moz-font-family: var(--main-font);
+}
+
+.bold-text {
+  font-weight: 900;
 }
 
 h1, h2, p, ul li {
   letter-spacing: 1px;
   line-height: 1.6;
-  color: #121c2d;
+  color: #576574;
   font-weight: lighter;
-  font-family: 'Noto Sans', sans-serif;
-  -webkit-font-family: 'Noto Sans', sans-serif;
-  -moz-font-family: 'Noto Sans', sans-serif;
+  font-family: var(--main-font);
+  -webkit-font-family: var(--main-font);
+  -moz-font-family: var(--main-font);
+}
+
+h1 {
+  text-transform: uppercase;
 }
 
 p, ul li {
@@ -74,6 +86,13 @@ footer {
   box-shadow: 2px 2px 2px 2px lightgrey;
 }
 
+.education-block {
+  margin: 10px 0;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px 2px lightgrey;
+}
+
 .custom-card {
   margin: 10px 0;
   padding: 20px;
@@ -83,6 +102,10 @@ footer {
 .card-description {
   text-align: justify;
   font-weight: 200;
+}
+
+#introduction-text {
+  margin: 40px 10px;
 }
 
 #introduction-text h2 {
@@ -124,12 +147,11 @@ section {
   font-size: .7em;
   font-weight: bold;
   letter-spacing: 1px;
-  color: #fff;
-  background-color: #6cb0e6;
+  color: #333;
+  background-color: #fff;
   padding: 13px;
-  border: solid #6cb0e6 3px;
-  border: none;
-  border-radius: 50px;
+  border: solid #333 1px;
+  border-radius: 2px;
 }
 
 .large-button {
@@ -138,12 +160,11 @@ section {
   font-weight: bold;
   width: 100%;
   letter-spacing: 1px;
-  color: #fff;
-  background-color: #6cb0e6;
+  color: #333;
+  background-color: #fff;
   padding: 25px 40px;
-  border: solid #6cb0e6 3px;
-  border: none;
-  border-radius: 50px;
+  border: solid #333 1px;
+  border-radius: 2px;
 }
 
 .large-button:hover, .button:hover {
@@ -151,6 +172,11 @@ section {
   cursor: pointer;
 }
 
+.education-image {
+  width: auto; 
+  height: 100px;
+  margin: 10px;
+}
 
 /* rotating image code */
 .rotate-img-180, .rotate-img-360 {
@@ -196,6 +222,10 @@ section {
   .button {
     width: 100%;
     margin: 5px 0;
+  }
+
+  #introduction-text {
+    margin: 30px 20px;
   }
 
   #introduction-text h2 {
