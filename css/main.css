@@ -1,5 +1,6 @@
 :root {
   --main-font: 'Montserrat', 'Helvetica', sans-serif;
+  --secondary-color: #487eb0;
 }
 
 /* GENERAL */
@@ -9,6 +10,10 @@ body, h1, h2, h3, h4, h5, p {
   -moz-font-family: var(--main-font);
 }
 
+a {
+  color: var(--secondary-color);
+}
+
 .bold-text {
   font-weight: 900;
 }
@@ -16,7 +21,7 @@ body, h1, h2, h3, h4, h5, p {
 h1, h2, p, ul li {
   letter-spacing: 1px;
   line-height: 1.6;
-  color: #576574;
+  color: black;
   font-weight: lighter;
   font-family: var(--main-font);
   -webkit-font-family: var(--main-font);
@@ -28,7 +33,7 @@ h1 {
 }
 
 p, ul li {
-  color: #576574;
+  color: black;
 }
 
 hr:after {
@@ -83,14 +88,19 @@ footer {
   margin: 40px 0px;
   padding: 20px;
   background-color: #fff;
-  box-shadow: 2px 2px 2px 2px lightgrey;
+  box-shadow: 2px 2px 2px 2px grey;
 }
 
-.education-block {
+.education-block, 
+.skill-block {
   margin: 10px 0;
   padding: 15px;
   background-color: #fff;
-  box-shadow: 2px 2px 2px 2px lightgrey;
+  box-shadow: 2px 2px 2px 2px grey;
+}
+
+.skill-block {
+  height: 350px !important;
 }
 
 .custom-card {
@@ -128,42 +138,46 @@ section {
 .section-title {
   font-size: 1.5em;
   font-weight: bold;
-  color: #576574;
+  color: black;
 }
 
 .section-title-2 {
   font-size: 1.2em;
-  color: #576574;
+  color: black;
 }
 
 .contact-information {
   text-align: center;
 }
 
-
-/* BUTTONS */
-.button {
+.button,
+.small-button {
   text-transform: uppercase;
-  font-size: .7em;
   font-weight: bold;
   letter-spacing: 1px;
-  color: #333;
+  color: black;
   background-color: #fff;
-  padding: 13px;
-  border: solid #333 1px;
+  border: solid black 1px;
   border-radius: 2px;
+}
+
+.button {
+  padding: 20px 60px;
+}
+
+.small-button {
+  padding: 10px 10px;
 }
 
 .large-button {
   text-transform: uppercase;
-  font-size: .8em;
   font-weight: bold;
   width: 100%;
   letter-spacing: 1px;
-  color: #333;
+  color: black;
   background-color: #fff;
   padding: 25px 40px;
-  border: solid #333 1px;
+  border: solid grey 1px;
   border-radius: 2px;
 }
 
@@ -222,6 +236,10 @@ section {
   .button {
     width: 100%;
     margin: 5px 0;
+  }
+
+  .skill-block {
+    height: auto !important;
   }
 
   #introduction-text {
