@@ -10,6 +10,14 @@ body, h1, h2, h3, h4, h5, p {
   -moz-font-family: var(--main-font);
 }
 
+.jumbotron-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../media/other/laptop1.jpg');
+  display: none;
+}
+
 a {
   color: var(--secondary-color);
 }
@@ -221,6 +229,14 @@ section {
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 780px) {
+  .banner {
+    display: none;
+  }
+
+  .jumbotron-image {
+    display: block;
+  }
+
   .main, footer {
     margin-left: 0;
     margin-top: 0;
@@ -243,7 +259,7 @@ section {
   }
 
   #introduction-text {
-    margin: 30px 20px;
+    margin: 0px 20px;
   }
 
   #introduction-text h2 {
