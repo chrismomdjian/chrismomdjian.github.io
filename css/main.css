@@ -1,6 +1,7 @@
 :root {
   --main-font: 'Montserrat', 'Helvetica', sans-serif;
-  --secondary-color: #487eb0;
+  --secondary-color: #5596e6;
+  --text-color: #535f7f;
 }
 
 /* GENERAL */
@@ -8,14 +9,23 @@ body, h1, h2, h3, h4, h5, p {
   font-family: var(--main-font);
   -webkit-font-family: var(--main-font);
   -moz-font-family: var(--main-font);
+  line-height: 40px;
 }
 
 .jumbotron-image {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('../media/other/laptop1.jpg');
+  background-color: var(--main-color);
   display: none;
+}
+
+#header-title {
+  font-size: 4rem;
+}
+
+#header-subtext {
+  font-size: 2rem;
 }
 
 a {
@@ -29,19 +39,15 @@ a {
 h1, h2, p, ul li {
   letter-spacing: 1px;
   line-height: 1.6;
-  color: black;
+  color: var(--text-color);
   font-weight: lighter;
   font-family: var(--main-font);
   -webkit-font-family: var(--main-font);
   -moz-font-family: var(--main-font);
 }
 
-h1 {
-  text-transform: uppercase;
-}
-
 p, ul li {
-  color: black;
+  color: var(--text-color);
 }
 
 hr:after {
@@ -96,7 +102,12 @@ footer {
   margin: 40px 0px;
   padding: 20px;
   background-color: #fff;
-  box-shadow: 2px 2px 2px 2px grey;
+  border-radius: 4px;
+  box-shadow: 0 50px 100px rgba(50,50,93,.05),0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.1);    
+}
+
+.project-image {
+  width: 100% !important;
 }
 
 .education-block, 
@@ -104,7 +115,8 @@ footer {
   margin: 10px 0;
   padding: 15px;
   background-color: #fff;
-  box-shadow: 2px 2px 2px 2px grey;
+  border-radius: 5px;
+  box-shadow: 0 50px 100px rgba(50,50,93,.05),0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.1); 
 }
 
 .skill-block {
@@ -120,6 +132,10 @@ footer {
 .card-description {
   text-align: justify;
   font-weight: 200;
+}
+
+#introduction {
+  padding: 80px 0;
 }
 
 #introduction-text {
@@ -139,6 +155,20 @@ footer {
   font-size: 2em;
 }
 
+.lead {
+  font-size: 1.5em;
+  padding: 15px 0;
+}
+
+.skill-badge {
+  border-radius: 2px;
+  border: solid 2px #b9d7b9;
+  color: green;
+  font-size: small;
+  padding: 0 10px;
+  margin-bottom: 3px;
+}
+
 section {
   margin: 30px auto;
 }
@@ -146,12 +176,12 @@ section {
 .section-title {
   font-size: 1.5em;
   font-weight: bold;
-  color: black;
+  color: var(--text-color);
 }
 
 .section-title-2 {
   font-size: 1.2em;
-  color: black;
+  color: var(--text-color);
 }
 
 .contact-information {
@@ -163,9 +193,9 @@ section {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1px;
-  color: black;
-  background-color: #fff;
-  border: solid black 1px;
+  color: white;
+  background-color: var(--secondary-color);
+  border: solid var(--secondary-color) 1px;
   border-radius: 2px;
 }
 
@@ -182,10 +212,10 @@ section {
   font-weight: bold;
   width: 100%;
   letter-spacing: 1px;
-  color: black;
-  background-color: #fff;
+  color: white;
+  background-color: var(--secondary-color);
+  border: solid var(--secondary-color) 1px;
   padding: 25px 40px;
-  border: solid grey 1px;
   border-radius: 2px;
 }
 
@@ -235,6 +265,14 @@ section {
 
   .jumbotron-image {
     display: block;
+  }
+
+  #header-title {
+    font-size: 2rem;
+  }
+  
+  #header-subtext {
+    font-size: 1rem;
   }
 
   .main, footer {
