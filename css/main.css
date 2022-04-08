@@ -263,6 +263,11 @@ section {
     display: none;
   }
 
+  #introduction {
+    padding: 0;
+    text-align: center;
+  }
+
   .jumbotron-image {
     display: block;
   }
